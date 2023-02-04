@@ -197,26 +197,8 @@ function update_price() { //fxn goes through each item in list of all items and 
             price += 0.5
         }
     }
-    const priceDisplay = document.querySelector('.price');
-    priceDisplay.textContent = `Total: $${price}`;
-}
-
-
-function t_rem() {
-    if(items.includes('Tomato')){
-        var image = document.getElementById("Tomato");
-        var parent = image.parentNode;
-        parent.removeChild(image);
-
-        idx = items.indexOf('Tomato')
-        items.splice(idx,1)
-
-        update_price()
-        
-    }
-    else{
-
-    }
+    const priceDisplay = document.querySelector('.price'); //gets the price element
+    priceDisplay.textContent = `Total: $${price}`; //updates the price
 }
 
 function t_rem() {
@@ -372,7 +354,7 @@ function mayo_rem() {
     }
 }
 
-function rem_all(){
+function rem_all(){ //fxn to remove all toppings at the end
     h_rem()
     k_rem()
     l_rem()
