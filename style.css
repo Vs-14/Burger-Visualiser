@@ -1,0 +1,40 @@
+.heading{
+    text-align: center;
+}
+
+.bun{
+    display: block;
+    margin: 0 auto;
+}
+
+.toppings{
+padding-left: 30%;
+}
+
+button:hover{
+background-color: azure;
+cursor: pointer;
+}
+
+.price{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.p-btn{
+    font-size: larger;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(227, 39, 39);
+}
+
+.p-btn:hover{
+    cursor: pointer;
+    background-color: rgb(227, 39, 39);
+}
+
+.topping{
+    display: block;
+    margin: 0 auto;
+}
