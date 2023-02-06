@@ -5,38 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="1.js"></script>
-    <title>Burger Maker</title>
+    <script async src="app.js"></script>
+    <title>Burger Visualiser</title>
 </head>
 <body>
-    <h1 class="heading">Customise your burger</h1>
-    <img class="bun" src="images/Top_bun.jpg">
-    <img class="bun" src="images/Bottom_bun.jpg">
-    <h2 class="heading">Toppings</h2>
-    <div class="toppings">
-        <button onclick="t_add()">Tomato</button>
-        <button onclick="l_add()">Lettuce</button>
-        <button onclick="o_add()">Onion</button>
-        <button onclick="p_add()">Pickle</button>
-        <button onclick="c_add()">Cheese</button>
-        <button onclick="h_add()">Hamburger</button>
-        <button onclick="k_add()">Ketchup</button>
-        <button onclick="m_add()">Mustard</button>
-        <button onclick="mayo_add()">Mayo</button>
+    <div class="container">
+        <div class="main-header">
+            <h1>Customise your burger</h1>
+        </div>
+        <div class="bun-imgs">
+            <img class="bun" src="images/Top_bun.jpg">
+            <img class="bun" src="images/Bottom_bun.jpg">
+        </div>
+        <div class="header">
+            <h2 class="heading">Toppings</h2>
+        </div>
+        <div class="toppings t_add">
+            <button>Tomato</button>
+            <button>Lettuce</button>
+            <button>Onion</button>
+            <button>Pickle</button>
+            <button>Cheese</button>
+            <button>Hamburger</button>
+            <button>Ketchup</button>
+            <button>Mustard</button>
+            <button>Mayo</button>
+        </div>
+        <div class="header">
+            <h2 class="heading">Remove Toppings</h2>
+        </div>
+        <div class="toppings t_rem">
+            <button>Tomato</button>
+            <button>Lettuce</button>
+            <button>Onion</button>
+            <button>Pickle</button>
+            <button>Cheese</button>
+            <button>Hamburger</button>
+            <button>Ketchup</button>
+            <button>Mustard</button>
+            <button>Mayo</button>
+        </div>
+        <div class="price-display">
+            <p class="price">Total: $2</p>
+            <button class="p-btn">Pay</button>
+        </div>
     </div>
-    <h2 class="heading">Remove Topping</h2>
-    <div class="toppings">
-        <button onclick="t_rem()">Tomato</button>
-        <button onclick="l_rem()">Lettuce</button>
-        <button onclick="o_rem()">Onion</button>
-        <button onclick="p_rem()">Pickle</button>
-        <button onclick="c_rem()">Cheese</button>
-        <button onclick="h_rem()">Hamburger</button>
-        <button onclick="k_rem()">Ketchup</button>
-        <button onclick="m_rem()">Mustard</button>
-        <button onclick="mayo_rem()">Mayo</button>
-    </div>
-    <p class="price">Total: $2</p>
-    <button  class="p-btn" onclick="pay()">Pay</button>
 </body>
 </html>
