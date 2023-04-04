@@ -14,6 +14,7 @@ body{
     height: 100vh;
     text-align: center;
     background: linear-gradient(#f95700,#ffd166,#f95700);
+    font-family: Arial, sans-serif;
 }
 
 body .div{
@@ -28,6 +29,7 @@ img{
 }
 
 .main-header{
+    padding-top: 50px;
     padding-bottom: 10px;
 }
 
@@ -36,13 +38,36 @@ img{
     padding-bottom: 10px;
 }
 
-.toppings button{
-    font-size: medium;
+.toppings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.toppings button {
+    background-color: #333;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
 }
 
 .toppings button:hover{
     background-color: aliceblue;
     cursor: pointer;
+    border-radius: 10%;
+}
+
+.t_add button {
+    background-color: green;
+}
+
+.t_rem button {
+    background-color: red;
 }
 
 .price-display{
@@ -51,7 +76,6 @@ img{
 
 .price{
     padding-bottom: 10px;
-    font-size: larger;
 }
 
 .p-btn{
@@ -63,6 +87,7 @@ img{
 .p-btn:hover{
     background-color: green;
     cursor: pointer;
+    border-radius: 10%;
 }
 
 button{
@@ -70,21 +95,35 @@ button{
     border: none;
 }
 
-.nav{
-    padding: 20px;
-    text-align: center;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav li{
-    display: inline;
-    padding: 5%;
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
-.nav a{
-    color: white;
-    text-decoration: none;
+.nav li {
+  margin-left: 10px;
 }
 
-.nav a:hover{
-    background-color: rgba(255,255,255,0.3);
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
 }
