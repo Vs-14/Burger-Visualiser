@@ -56,18 +56,20 @@ img{
     width: 100px;
 }
 
-.toppings button:hover{
-    background-color: aliceblue;
-    cursor: pointer;
-    border-radius: 10%;
-}
-
 .t_add button {
     background-color: green;
 }
 
+.t_add button:hover{
+    background-color: rgb(78, 245, 78);
+}
+
 .t_rem button {
     background-color: red;
+}
+
+.t_rem button:hover{
+    background-color: rgb(241, 55, 55);
 }
 
 .price-display{
@@ -79,15 +81,18 @@ img{
 }
 
 .p-btn{
-    font-size: larger;
+    padding: 5px;
+    font-size: large;
     padding-left: 5px;
     padding-right: 5px;
+    background-color: green;
+    color: white;
+    border-radius: 10%;
 }
 
 .p-btn:hover{
-    background-color: green;
     cursor: pointer;
-    border-radius: 10%;
+    background-color: rgb(78, 245, 78)
 }
 
 button{
@@ -103,19 +108,16 @@ button{
   background-color: #333;
   color: #fff;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
+  text-align: right;
 }
 
 .nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
 }
 
 .nav li {
+    display: inline-block;
   margin-left: 10px;
 }
 
