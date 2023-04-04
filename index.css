@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(to left,teal,turquoise);
+}
+
+.main-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav{
+    text-align: center;
+}
+
+.nav li{
+    display: inline;
+    padding: 5%;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
+.nav button{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.nav button:hover{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.3);
+}

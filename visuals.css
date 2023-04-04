@@ -11,11 +11,15 @@
 }
 
 body{
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(#f95700,#ffd166,#f95700);
+}
+
+body .div{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    text-align: center;
 }
 
 img{
@@ -38,6 +42,7 @@ img{
 
 .toppings button:hover{
     background-color: aliceblue;
+    cursor: pointer;
 }
 
 .price-display{
@@ -51,12 +56,35 @@ img{
 
 .p-btn{
     font-size: larger;
-    background-color: blanchedalmond;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 .p-btn:hover{
-    background-color: goldenrod;
+    background-color: green;
     cursor: pointer;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.nav{
+    padding: 20px;
+    text-align: center;
+}
+
+.nav li{
+    display: inline;
+    padding: 5%;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: rgba(255,255,255,0.3);
 }

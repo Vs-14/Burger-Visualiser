@@ -4,6 +4,7 @@ const p_btn = document.querySelector('.p-btn')
 p_btn.addEventListener('click',function(){ //alerts the user about their purchase
     const msg = 'You have selected ' + items + ' as the toppings for your burger\nThanks for purchasing!'
     alert(msg)
+    window.location.reload() //to refresh the page
 })
 
 const t_add_btns = document.querySelector('.t_add') //gets the div that is parent of all topping add btns
@@ -14,7 +15,7 @@ t_add_btns.addEventListener('click',function(e){
     }
     else{ //if topping not present in list adds to list and places img between the buns
         var newimg = document.createElement('img')
-        newimg.src = 'images/' + tname + '.jpg'
+        newimg.src = 'images/' + tname + '.png'
         newimg.id = tname
         var parentDiv = document.getElementsByClassName("bun-imgs")[0] //gets the parent div
         var topbun = document.getElementsByClassName('bun')[0] //gets the topbun
