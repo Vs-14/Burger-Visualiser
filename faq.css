@@ -1,9 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body{
     background: linear-gradient(teal,turquoise,blue);
     height: 100vh;
 }
 
 body .main-div{
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,20 +70,32 @@ body .main-div{
     transition: .5s;
 }
 
-.nav{
-    text-align: center;
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+}
+  
+.nav ul {
+  list-style: none;
+  margin: 0;
 }
 
-.nav li{
-    display: inline;
-    padding: 5%;
+.nav li {
+    display: inline-block;
+  margin-left: 10px;
 }
 
-.nav a{
-    color: white;
-    text-decoration: none;
+.nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.nav a:hover{
-    background-color: rgba(255,255,255,0.3);
+.nav a:hover {
+  text-decoration: underline;
 }
