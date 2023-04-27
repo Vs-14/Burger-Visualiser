@@ -2,9 +2,20 @@ var items = [] //list to store the toppings
 
 const p_btn = document.querySelector('.p-btn')
 p_btn.addEventListener('click',function(){ //alerts the user about their purchase
-    const msg = 'You have selected ' + items + ' as the toppings for your burger\nThanks for purchasing!'
-    alert(msg)
-    window.location.reload() //to refresh the page
+    if(items.length == 0){
+        const msg = 'Please select atleast one topping!'
+        alert(msg)
+    }
+    else if(items.length == 1){
+        const msg = 'You have selected ' + items + ' as the topping for your burger\nThanks for your purchase!'
+        alert(msg)
+        window.location.reload() //to refresh the page
+    }
+    else{
+        const msg = 'You have selected ' + items + ' as the toppings for your burger\nThanks for your purchase!'
+        alert(msg)
+        window.location.reload() //to refresh the page
+    }
 })
 
 const t_add_btns = document.querySelector('.t_add') //gets the div that is parent of all topping add btns
@@ -36,9 +47,6 @@ t_rem_btns.addEventListener('click',function(e){
         idx = items.indexOf(tname)
         items.splice(idx,1)
         update_price()
-    }
-    else{
-
     }
 })
 
